@@ -1,27 +1,27 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function MenuHorizontal(){
-    const [seccion, setSeccion] = useState("");
     
 
     return (
-        <div className = "bg-black bg-opacity-40">
-            <button 
-                className = "text-white w-1/3 p-4 uppercase font-semibold hover:bg-gray-400 "
-                //onClick = { setSeccion("aboutme") }
+        <nav className = "flex bg-black bg-opacity-40">
+            <Link
+                to = "/aboutme"
+                className = "text-white text-center w-1/3 p-4 uppercase font-semibold hover:bg-gray-400 "
                 >About me
-            </button>
-            <button 
-                className = "text-white w-1/3 p-4 border-x-solid border-x-2 border-x-white uppercase font-semibold hover:bg-gray-400"
-                //onClick = { setSeccion("post") }
-                >Post
-            </button>
-            <button 
-                className = "text-white w-1/3 p-4 uppercase font-semibold hover:bg-gray-400"
-              //  onClick = { setSeccion("forecast") }
+            </Link>
+            <Link
+                to = "/blog"
+                className = "text-white text-center w-1/3 p-4 border-x-solid border-x-2 border-x-white uppercase font-semibold hover:bg-gray-400"
+                >Blog
+            </Link>
+            <Link
+                to = "/forecast"
+                className = "text-white text-center w-1/3 p-4 uppercase font-semibold hover:bg-gray-400"
                 >Forecast
-           </button>
-        </div>
+           </Link>
+        </nav>
     )
 }
 
