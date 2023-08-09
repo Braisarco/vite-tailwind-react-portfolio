@@ -1,4 +1,4 @@
-import fotoBrais from '../fotoBrais.jpeg'
+import fotoBrais from '../resources/images/fotoBrais.jpeg'
 
 function Index (){
     return(
