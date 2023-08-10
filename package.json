@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
     "postcss": "^8.4.27",
     "react": "^18.2.0",
     "react-collapsed": "^4.0.4",
     "react-dom": "^18.2.0",
+    "react-multi-carousel": "^2.8.4",
     "react-router-dom": "^6.14.2",
+    "sass": "^1.65.1",
+    "swiper": "^10.1.0",
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {

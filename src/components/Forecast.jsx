@@ -1,10 +1,54 @@
+import { useState } from "react";
+import Carousel from "react-multi-carousel";
+import Playa from "./Playa";
+
+
 function Forecast (){
 
 
     return(
-        <div className = " bg-gray-600 bg-opacity-60 h-32 mt-32 mx-20 rounded-xl shadow-md p-5">
-            <p className = " text-white text-lg font-medium">Esto vai a ser un forecast</p>
-        </div>
+        <Carousel
+            additionalTransfrom={0}
+            arrows
+            autoPlaySpeed={3000}
+            centerMode={false}
+            className=""
+            containerClass="container-with-dots"
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            pauseOnHover
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            responsive={{
+                desktop: {
+                  breakpoint: {
+                    max: 3000,
+                    min: 1024
+                  },
+                  items: 3,
+                  partialVisibilityGutter: 40
+                }
+            }}
+            rewind={false}
+            rewindWithAnimation={false}
+            rtl={false}
+            shouldResetAutoplay
+            showDots={false}
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+        >
+            <Playa/>
+            <Playa/>
+            <Playa/>
+            <Playa/>
+        </Carousel>
     )
 }
 
