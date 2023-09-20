@@ -2,7 +2,7 @@ function Playa () {
 
 
     return(
-        <div className = "bg-gray-600 w-56 h-96 bg-opacity-60 mt-32  rounded-xl shadow-md p-5">
+        <div className = "bg-gray-700 w-56 h-96 bg-opacity-60 mt-32  rounded-xl shadow-md p-5">
             <div>Nombre playa</div>
             <div className = "flex">
                 <p>Weather icon </p>
